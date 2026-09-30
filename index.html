@@ -12,7 +12,9 @@
   <meta property="og:description" content="The band that fills the dancefloor. Weddings and events across the UK.">
   <meta property="og:image" content="images/og-image.jpg">
 
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +38,7 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#band">The Band</a></li>
-          <li><a href="#setlist">Setlist</a></li>
+          <li><a href="#setlist">Songs</a></li>
           <li><a href="#packages">Packages</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -69,26 +71,10 @@
         </p>
         <div class="hero-ctas reveal">
           <a href="#contact" class="btn btn-primary">Check your date</a>
-          <a href="#setlist" class="btn btn-ghost">See the setlist</a>
+          <a href="#setlist" class="btn btn-ghost">See the songs</a>
         </div>
       </div>
-
-      <a href="#contact" class="sticker" aria-label="Get a quote">
-        <svg viewBox="0 0 200 200" aria-hidden="true">
-          <defs><path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
-          <text textLength="448" lengthAdjust="spacing"><textPath href="#circlePath" textLength="448" lengthAdjust="spacing">GET A QUOTE &#9733; GET A QUOTE &#9733; GET A QUOTE &#9733;</textPath></text>
-        </svg>
-        <span class="sticker-center" aria-hidden="true">&#9835;</span>
-      </a>
     </section>
-
-    <!-- ============ MARQUEE TICKER ============ -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track">
-        <span>Weddings</span><span>&#9733;</span><span>Birthdays</span><span>&#9733;</span><span>Corporate Events</span><span>&#9733;</span><span>Festivals</span><span>&#9733;</span><span>Christmas Parties</span><span>&#9733;</span><span>Anniversaries</span><span>&#9733;</span>
-        <span>Weddings</span><span>&#9733;</span><span>Birthdays</span><span>&#9733;</span><span>Corporate Events</span><span>&#9733;</span><span>Festivals</span><span>&#9733;</span><span>Christmas Parties</span><span>&#9733;</span><span>Anniversaries</span><span>&#9733;</span>
-      </div>
-    </div>
 
     <!-- ============ ABOUT ============ -->
     <section class="section about" id="about">
@@ -146,10 +132,10 @@
         <div class="band-grid">
           <!-- Replace the roles below with names if you'd like -->
           <figure class="band-card reveal">
-            <img src="images/keys-vocals.jpg" alt="Keys and vocals player singing at a Nord keyboard" loading="lazy">
+            <img src="images/keys-vocals.jpg" alt="Keys player singing at a Nord keyboard" loading="lazy">
             <figcaption>
-              <span class="band-role">Keys &amp; Vocals</span>
-              <span class="band-tag">The voice</span>
+              <span class="band-role">Keys</span>
+              <span class="band-tag">The keys</span>
             </figcaption>
           </figure>
           <figure class="band-card reveal">
@@ -180,64 +166,40 @@
       </div>
     </section>
 
-    <!-- ============ SETLIST ============ -->
+    <!-- ============ SONGS ============ -->
     <section class="section setlist" id="setlist">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow reveal">The setlist</p>
+          <p class="eyebrow reveal">Example songs</p>
           <h2 class="section-title reveal">Bangers, from every decade.</h2>
-          <p class="section-lede reveal">A taste of what we play. Got a must-have song? Just ask, we love a request.</p>
+          <p class="section-lede reveal">Just a taste of what we play. Got a must-have song? Just ask, we love a request.</p>
         </div>
 
-        <div class="tabs reveal" role="tablist" aria-label="Setlist genres">
-          <button role="tab" aria-selected="true" aria-controls="tab-pop" id="t-pop">Pop</button>
-          <button role="tab" aria-selected="false" aria-controls="tab-indie" id="t-indie" tabindex="-1">Indie &amp; Rock</button>
-          <button role="tab" aria-selected="false" aria-controls="tab-soul" id="t-soul" tabindex="-1">Soul &amp; Funk</button>
-          <button role="tab" aria-selected="false" aria-controls="tab-classics" id="t-classics" tabindex="-1">Classics</button>
-        </div>
-
-        <div class="tab-panels">
-          <ul class="songs" role="tabpanel" id="tab-pop" aria-labelledby="t-pop">
-            <li><span>Dancing On My Own</span><em>Robyn</em></li>
-            <li><span>Shut Up and Dance</span><em>Walk The Moon</em></li>
-            <li><span>Levitating</span><em>Dua Lipa</em></li>
-            <li><span>Valerie</span><em>Amy Winehouse</em></li>
-            <li><span>Uptown Funk</span><em>Mark Ronson ft. Bruno Mars</em></li>
-            <li><span>As It Was</span><em>Harry Styles</em></li>
-            <li><span>Shake It Off</span><em>Taylor Swift</em></li>
-            <li><span>Don't Start Now</span><em>Dua Lipa</em></li>
-          </ul>
-          <ul class="songs" role="tabpanel" id="tab-indie" aria-labelledby="t-indie" hidden>
-            <li><span>Mr. Brightside</span><em>The Killers</em></li>
-            <li><span>I Bet You Look Good On The Dancefloor</span><em>Arctic Monkeys</em></li>
-            <li><span>Take Me Out</span><em>Franz Ferdinand</em></li>
-            <li><span>Don't Look Back In Anger</span><em>Oasis</em></li>
-            <li><span>Sex On Fire</span><em>Kings Of Leon</em></li>
-            <li><span>Seven Nation Army</span><em>The White Stripes</em></li>
-            <li><span>Chelsea Dagger</span><em>The Fratellis</em></li>
-            <li><span>Common People</span><em>Pulp</em></li>
-          </ul>
-          <ul class="songs" role="tabpanel" id="tab-soul" aria-labelledby="t-soul" hidden>
-            <li><span>September</span><em>Earth, Wind &amp; Fire</em></li>
-            <li><span>Superstition</span><em>Stevie Wonder</em></li>
-            <li><span>Get Lucky</span><em>Daft Punk</em></li>
-            <li><span>Signed, Sealed, Delivered</span><em>Stevie Wonder</em></li>
-            <li><span>Ain't No Mountain High Enough</span><em>Marvin Gaye &amp; Tammi Terrell</em></li>
-            <li><span>Treasure</span><em>Bruno Mars</em></li>
-            <li><span>Blame It On The Boogie</span><em>The Jacksons</em></li>
-            <li><span>Lovely Day</span><em>Bill Withers</em></li>
-          </ul>
-          <ul class="songs" role="tabpanel" id="tab-classics" aria-labelledby="t-classics" hidden>
-            <li><span>Don't Stop Me Now</span><em>Queen</em></li>
-            <li><span>Twist And Shout</span><em>The Beatles</em></li>
-            <li><span>Dancing Queen</span><em>ABBA</em></li>
-            <li><span>I Wanna Dance With Somebody</span><em>Whitney Houston</em></li>
-            <li><span>Sweet Caroline</span><em>Neil Diamond</em></li>
-            <li><span>Johnny B. Goode</span><em>Chuck Berry</em></li>
-            <li><span>You Shook Me All Night Long</span><em>AC/DC</em></li>
-            <li><span>Livin' On A Prayer</span><em>Bon Jovi</em></li>
-          </ul>
-        </div>
+        <ul class="songs reveal">
+          <li><span>I Wanna Dance With Somebody</span><em>Whitney Houston</em></li>
+          <li><span>Blame It On The Boogie</span><em>The Jacksons</em></li>
+          <li><span>Faith</span><em>George Michael</em></li>
+          <li><span>Don't Stop Me Now</span><em>Queen</em></li>
+          <li><span>Footloose</span><em>Kenny Loggins</em></li>
+          <li><span>Shackles</span><em>Mary Mary</em></li>
+          <li><span>Waterloo</span><em>ABBA</em></li>
+          <li><span>Dancing Queen</span><em>ABBA</em></li>
+          <li><span>Superstition</span><em>Stevie Wonder</em></li>
+          <li><span>Murder On The Dancefloor</span><em>Sophie Ellis-Bextor</em></li>
+          <li><span>Proud Mary</span><em>Ike &amp; Tina Turner</em></li>
+          <li><span>Love On Top</span><em>Beyonc&eacute;</em></li>
+          <li><span>Unwritten</span><em>Natasha Bedingfield</em></li>
+          <li><span>Twist And Shout</span><em>The Beatles</em></li>
+          <li><span>Just The Way You Are</span><em>Bruno Mars</em></li>
+          <li><span>Mambo No. 5</span><em>Lou Bega</em></li>
+          <li><span>Man I Need</span><em>Olivia Dean</em></li>
+          <li><span>Rein Me In</span><em>Sam Fender &amp; Olivia Dean</em></li>
+          <li><span>Oh What A Night</span><em>Frankie Valli &amp; The Four Seasons</em></li>
+          <li><span>September</span><em>Earth, Wind &amp; Fire</em></li>
+          <li><span>Shut Up And Dance</span><em>Walk The Moon</em></li>
+          <li><span>I Want You Back</span><em>The Jackson 5</em></li>
+          <li><span>Valerie</span><em>Amy Winehouse &amp; Mark Ronson</em></li>
+        </ul>
       </div>
     </section>
 

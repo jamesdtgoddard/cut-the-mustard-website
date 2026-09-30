@@ -42,27 +42,6 @@ if ('IntersectionObserver' in window && !reduceMotion) {
   reveals.forEach((el) => el.classList.add('in'));
 }
 
-// ---------- Setlist tabs ----------
-const tabs = [...document.querySelectorAll('[role="tab"]')];
-const selectTab = (tab) => {
-  tabs.forEach((t) => {
-    const selected = t === tab;
-    t.setAttribute('aria-selected', String(selected));
-    t.tabIndex = selected ? 0 : -1;
-    document.getElementById(t.getAttribute('aria-controls')).hidden = !selected;
-  });
-};
-tabs.forEach((tab, i) => {
-  tab.addEventListener('click', () => selectTab(tab));
-  tab.addEventListener('keydown', (e) => {
-    const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
-    if (!dir) return;
-    const next = tabs[(i + dir + tabs.length) % tabs.length];
-    next.focus();
-    selectTab(next);
-  });
-});
-
 // ---------- Parallax on the big crowd photo ----------
 const crowdBg = document.querySelector('.crowd-bg');
 if (crowdBg && !reduceMotion) {
